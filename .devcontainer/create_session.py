@@ -12,3 +12,6 @@ connection_parameters = {
 
 session = Session.builder.configs(connection_parameters).create()
 print("✅ セッション作成成功")
+
+df = session.sql("SELECT CURRENT_USER(), CURRENT_ROLE(), CURRENT_DATABASE(), CURRENT_SCHEMA()").collect()
+print(df)

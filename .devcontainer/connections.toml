@@ -1,10 +1,10 @@
 # Can override the default connection name with an environment variable as follows
 #export SNOWFLAKE_DEFAULT_CONNECTION_NAME="urxxlpr-dp02760"
 
-[urxxlpr-dp02760]
-account = "urxxlpr-dp02760"
-user = "zeal041"
-password = "Snowflake20021025"
+[default]
+account = "myaccount"
+user = "myuser"
+password = "mypassword"
 role = "HOL_ROLE"
 warehouse = "HOL_WH"
 database = "HOL_DB"
