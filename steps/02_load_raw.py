@@ -69,7 +69,28 @@ def validate_raw_tables(session):
 
 # For local debugging
 if __name__ == "__main__":
-    # Create a local Snowpark session
-    with Session.builder.getOrCreate() as session:
-        load_all_raw_tables(session)
+    from snowflake.snowpark import Session
+
+    connection_parameters = {
+        "account": "urxxlpr-dp02760",
+        "user": "zeal041",
+        "password": "Snowflake20021025",
+        "role": "HOL_ROLE",
+        "warehouse": "HOL_WH",
+        "database": "HOL_DB",
+        "schema": "ANALYTICS"
+    }
+
+    #session = Session.builder.configs(connection_parameters).create()
+
+
+# 以降、session を使って処理
+#df = session.table("RAW_WEATHER_DATA")
+#df.show()
+
+# 最後にセッションを閉じる（任意）
+#session.close()
+
+   # with Session.builder.getOrCreate() as session:
+      #  load_all_raw_tables(session)
 #        validate_raw_tables(session)
