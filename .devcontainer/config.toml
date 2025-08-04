@@ -1,5 +1,5 @@
 # Can override the default connection name with an environment variable as follows
-#export SNOWFLAKE_DEFAULT_CONNECTION_NAME="default"
+#export SNOWFLAKE_DEFAULT_CONNECTION_NAME="urxxlpr-dp02760"
 
 # Only for Snow CLI, can override connection details as follows
 #export SNOWFLAKE_CONNECTIONS_DEFAULT_PASSWORD=""
