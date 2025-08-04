@@ -4,4 +4,4 @@
 # Only for Snow CLI, can override connection details as follows
 #export SNOWFLAKE_CONNECTIONS_DEFAULT_PASSWORD=""
 
-default_connection_name = "default"
+default_connection_name = "urxxlpr-dp02760"
